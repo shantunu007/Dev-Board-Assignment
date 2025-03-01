@@ -1,6 +1,6 @@
 
 
-const bgColors =["lightblue", "violet", "lightgreen", "purple", "skyBlue", "cyan"];
+const bgColors =["lightblue", "violet", "lightgreen", "purple", "skyblue", "cyan"];
 
 let currentColor = 0;
 
@@ -13,4 +13,4 @@ document.getElementById("bg-change").addEventListener("click", function(){
             break;
         }
     }
-})
+});

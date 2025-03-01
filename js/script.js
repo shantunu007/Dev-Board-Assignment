@@ -46,8 +46,11 @@ for (const button of completeButtons) {
             div.classList.add("rounded-xl");
             div.classList.add("w-80");
             div.classList.add("mx-auto");
+            div.classList.add("text-center");
+            let time = new Date();
+            const currentTime = time.toLocaleTimeString();
             div.innerHTML = `
-                <p>You have completed the ${titles[titleIndex]}</p>
+                <p>You have completed the ${titles[titleIndex]} at ${currentTime}</p>
             `
 
             container.appendChild(div);
