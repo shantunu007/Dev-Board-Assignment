@@ -23,6 +23,7 @@ let titleIndex = 0;
 
 
 // Added the checkout increase and decrease js problem
+// for the increment
 for (const button of completeButtons) {
     button.addEventListener("click", function() {
         alert("Board Updated Successfully");
@@ -34,11 +35,25 @@ for (const button of completeButtons) {
 
 
         }
+    });
+}
+
+// For the decrement
+for (const button of completeButtons) {
+    button.addEventListener("click", function() {
         if (counterValue > 0) { 
             counterValue--;
             counterElement.innerText = counterValue;
             button.disabled = true;
         }
+        
+    });
+}
+
+// for the history
+for (const button of completeButtons) {
+    button.addEventListener("click", function() {
+        
         if(titleIndex < titles.length){
             const div = document.createElement("div");
             div.classList.add("bg-blue-100");
