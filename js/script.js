@@ -21,6 +21,8 @@ const titles = [
 
 let titleIndex = 0;
 
+
+// Added the checkout increase and decrease js problem
 for (const button of completeButtons) {
     button.addEventListener("click", function() {
         alert("Board Updated Successfully");
@@ -59,13 +61,15 @@ for (const button of completeButtons) {
     });
 }
 
+
+// Added the clear history js problem
 document.getElementById("clear-button").addEventListener("click", function(){
     container.innerHTML = "";
 })
 
-// const date = new Date();
-// const currentDate = date.getDate() + '-' + (date.getMonth()+1) + '-' + date.getFullYear();
-// document.getElementById("current-date").innerHTML = currentDate;
+
+
+// Added the Current Date
 
 const date = new Date();
 const currentDate = date.toDateString();
