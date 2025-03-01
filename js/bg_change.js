@@ -1,3 +1,16 @@
+
+
+const bgColors =["lightblue", "violet", "lightgreen", "purple", "skyBlue", "cyan"];
+
+let currentColor = 0;
+
 document.getElementById("bg-change").addEventListener("click", function(){
-    console.log("hello boss you can change the bg color")
+    
+    for(let i = 0; i < bgColors.length; i++){
+        if(i === currentColor){
+            document.body.style.backgroundColor = bgColors[i];
+            currentColor = (currentColor + 1) % bgColors.length;
+            break;
+        }
+    }
 })
