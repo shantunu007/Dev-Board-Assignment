@@ -62,6 +62,15 @@ for (const button of completeButtons) {
 }
 
 
+// last alert show
+document.getElementById("last-button").addEventListener("click", function(event){
+    event.preventDefault();
+    alert("Congratulations!!! You have completed all the current task");
+})
+
+
+
+
 // Added the clear history js problem
 document.getElementById("clear-button").addEventListener("click", function(){
     container.innerHTML = "";
