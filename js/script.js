@@ -46,7 +46,6 @@ for (const button of completeButtons) {
             div.classList.add("rounded-xl");
             div.classList.add("w-80");
             div.classList.add("mx-auto");
-            div.classList.add("text-center");
             let time = new Date();
             const currentTime = time.toLocaleTimeString();
             div.innerHTML = `
@@ -63,3 +62,12 @@ for (const button of completeButtons) {
 document.getElementById("clear-button").addEventListener("click", function(){
     container.innerHTML = "";
 })
+
+// const date = new Date();
+// const currentDate = date.getDate() + '-' + (date.getMonth()+1) + '-' + date.getFullYear();
+// document.getElementById("current-date").innerHTML = currentDate;
+
+const date = new Date();
+const currentDate = date.toDateString();
+document.getElementById("current-date").innerHTML = currentDate;
+
