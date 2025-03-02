@@ -1,7 +1,7 @@
 
 // Theme Change by various color js problem
 
-const bgColors =["lightblue", "violet", "lightgreen", "purple", "skyblue", "cyan"];
+const bgColors =["lightblue", "violet", "lightgreen", "purple", "skyblue", "cyan", "black", "white", "yellow"];
 
 let currentColor = 0;
 
